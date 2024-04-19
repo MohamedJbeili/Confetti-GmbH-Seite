@@ -301,22 +301,12 @@ main #anmeldung form p.center{
     padding: 0.5rem;
     border-radius: 10px;
     position: fixed;
-    bottom: 208px;
-    left: 10rem;
+    bottom: 500px;
+    left: 8rem;
     opacity: 0;
 }
     
-.oben {
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 10px;
-    position: fixed;
-    bottom: 208px;
-    left: 10rem;
-    opacity: 0;
-}
+
 
 
 
