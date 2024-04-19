@@ -7,7 +7,7 @@
 
     /* Global */
     .fixed{
-        position: sticky;
+        position: fixed;
         top:0;
         margin-inline: auto ;
         z-index: 100;
