@@ -1,0 +1,372 @@
+/* Variable */
+:root{
+    --mainFarbe:#C90130;
+    --sekundaerFarbe:#151515;
+    --dritteFarbe:#c6c6c6;
+    }
+
+    /* Global */
+    .fixed{
+        position: sticky;
+        top:0;
+        margin-inline: auto ;
+        z-index: 100;
+        margin-top: 0;
+    }
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        scroll-behavior: smooth;
+    }
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    img{
+        max-width: 100%;
+    }
+    .center{
+        text-align: center;
+    }
+    
+    /* Wrapper Eigenschaft */
+    div.wrapper{
+        width: 1200px;
+        margin-inline:auto ;
+        padding-top: 1rem;
+       
+    }
+
+    /* Header Eigenschaft */
+   
+    header div.header{
+        display: flex;
+        justify-content: space-between;
+    }
+    div.wrapper header div.logo {
+width: 75px;
+    }
+    div.wrapper header div.header div.title{
+       margin-top: 1.2rem;
+}
+div.wrapper header div.header div.title h1{
+    font-size: 2.5rem;
+}
+
+
+
+    /* Nav Eigenschaft */
+  
+    div.wrapper header nav{
+        height: 50px;
+        background-color: var(--mainFarbe);
+        margin-top: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    div.wrapper header nav ul {
+        display: flex;
+    }
+    div.wrapper header nav ul li {
+    display: inline-block;
+    text-align: right;
+    padding-inline: 0.5rem;
+    line-height: 50px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgb(255,255,255);
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+    div.wrapper header nav ul li {
+    display: inline-block;
+    text-align: right;
+    padding-inline: 0.5rem;
+    line-height: 50px;
+    border-right: 1px solid #000;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+    div.wrapper header nav ul li {
+    display: inline-block;
+    text-align: right;
+    padding-inline: 0.5rem;
+    line-height: 50px;
+    border-right: 1px solid #000;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+    div.wrapper header nav ul li {
+    display: inline-block;
+    text-align: right;
+    padding-inline: 0.5rem;
+    line-height: 50px;
+    border-right: 1px solid #000;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+    div.wrapper header nav ul li {
+    display: inline-block;
+    text-align: right;
+    padding-inline: 0.5rem;
+    line-height: 50px;
+    border-right: 1px solid #000;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+    div.wrapper header nav ul li {
+    display: inline-block;
+    text-align: right;
+    padding-inline: 0.5rem;
+    line-height: 50px;
+    border-right: 1px solid #000;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+    div.wrapper header nav ul li a{
+        color: #fff;
+    
+    }
+    div.wrapper header nav ul li:hover{
+        background-color: var(--dritteFarbe);
+        color: var(--sekundaerFarbe);
+    }
+    div.wrapper header nav img{
+        display: inline-block;
+        height: 35px;
+        filter: grayscale(1) brightness(10);
+        display: none;
+        
+    }
+
+/* hero Eigenschaft */
+
+    div.wrapper header div.hero{
+        height: 600px;
+        background: url(bilder/Bild_10.jpg) center;
+        
+    }
+    /* Main Eigenschaft */
+    main{
+        margin-top: 2rem;
+    }
+
+
+    main > div{
+        display: flex;
+        justify-content: space-evenly;
+        padding-block: 1rem;
+    }
+    main div figure img{
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        transition: 500ms;
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        -ms-transition: 500ms;
+        -o-transition: 500ms;
+}
+main div figure img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+    main div :is(figure,article){
+        width: 40%;
+    }
+    main div article h2{
+        color: var(--mainFarbe);
+        margin-bottom: 1rem;
+    }
+    main div article p{
+        line-height: 1.5rem;
+    }
+    main fieldset:nth-child(1) div > * {
+        display: inline-block;
+    }
+   
+
+
+
+
+    /* Formular Eigenschaft */
+   
+
+    main #anmeldung{
+        background-color: var(--dritteFarbe);
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+    main #anmeldung form{
+        width: 60%;
+        padding: 1rem;
+        margin-inline:auto ;
+    }
+    main #anmeldung form h2{
+        margin-bottom:2rem ;
+        color: var(--mainFarbe);
+    }
+    main #anmeldung form > div{
+        margin-top:1.5rem ;
+        display: flex;
+        justify-content: space-between;
+    } 
+    main #anmeldung form div label{
+        font-size: 1.5rem;
+    }
+    main #anmeldung form fieldset#personen-anzahl{
+        margin-block: 1.5rem;
+        border: none !important;
+    }
+    main #anmeldung form fieldset div{ display: flex; justify-content: space-between; margin-bottom: 1rem;}
+    main #anmeldung form fieldset div input[type="radio"]{
+        margin-right: 1rem;
+        width: 20px;
+        box-shadow:none
+    }
+    main #anmeldung form fieldset div input{margin-left: 1rem; width: 70px; border: none; box-shadow:  2px 3px 2px rgba(0, 0, 0, 0.3);}
+    main #anmeldung form fieldset div label{font-size: 1.35rem;}
+    main #anmeldung form span{
+        color: var(--mainFarbe);
+    }
+    main #anmeldung form > div input{
+        height: 45px;
+        width: 75%;
+        border-radius: 5px ;
+        -webkit-border-radius: 5px ;
+        -moz-border-radius: 5px ;
+        -ms-border-radius: 5px ;
+        -o-border-radius: 5px ;
+        box-shadow:  2px 3px 2px rgba(0, 0, 0, 0.3);
+        padding: 0.5rem;
+        outline:none;
+        border: none;
+}
+main #anmeldung form fieldset#teilnahme-anzahl{
+    padding-inline: 1rem;
+}
+main #anmeldung form fieldset#teilnahme-anzahl div{
+    margin-top: 1rem;
+}
+main #anmeldung form fieldset#teilnahme-anzahl div label:not(div:last-child label){margin-left: 6rem;}
+main #anmeldung form p{
+    
+    font-size: 1.3rem;
+}
+main #anmeldung form p.center{
+    margin-top: 1rem;
+}
+    main #anmeldung form button{
+        display: block;
+        width: 150px;
+        font-size: 1rem;
+        margin-inline: auto ;
+        margin-top: 1rem;
+        padding-block: 0.3rem ;
+        border: none;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        transition: 500ms;
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        -ms-transition: 500ms;
+        -o-transition: 500ms;
+        background-color: var(--mainFarbe);
+        color: #fff;
+}
+    main #anmeldung form button:hover{
+        background-color: #333;
+        
+        
+    }
+.oben {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 208px;
+    left: 10rem;
+    opacity: 0;
+}
+    
+.oben {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 208px;
+    left: 10rem;
+    opacity: 0;
+}
+
+
+
+    /* Footer Eigenschaft */
+    footer{
+        background-color: var(--mainFarbe);
+        padding-block: 2rem;
+        padding-inline:5rem ;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer div.links h3{
+        color: var(--sekundaerFarbe);
+    }
+    footer div.links p{
+        margin-bottom: 1.5rem;
+        line-height: 1.7;}
+    footer div.rechts{
+            width: 30%;
+        }
+    footer div.rechts div{
+        margin-top:1rem ;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+   
+    footer div.rechts h3{
+        width: 100%;
+        color: var(--sekundaerFarbe);
+        margin-bottom: 0.5rem;
+    }
+    footer div.rechts div form{
+        width: 100%;
+        margin-inline: auto;
+    }
+    footer div.rechts div input{
+        height: 25px;
+        width: 70%;
+        border-radius: 5px ;
+        -webkit-border-radius: 5px ;
+        -moz-border-radius: 5px ;
+        -ms-border-radius: 5px ;
+        -o-border-radius: 5px ;
+        padding: 0.5rem;
+        outline:none;
+        border: none;
+         box-shadow:  2px 3px 2px rgba(0, 0, 0, 0.3);
+
+    }
+    footer div.rechts textarea{
+        margin-top: 1rem;
+        width: 100%;
+    }
